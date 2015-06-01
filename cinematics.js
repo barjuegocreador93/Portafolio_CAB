@@ -17,7 +17,7 @@ function actv(id)
 	this.nsca=0;	
 	this.id=id;
 	this.pres=0;
-	this.run=function()	
+	this.run=function(Titulos_bool)	
 	{
 		var name=this.name;
 		var scla=this.scla;
@@ -69,7 +69,7 @@ function actv(id)
 				}
 				
 			}
-		if(bool&&!isJQ("."+this.scla+this.id+"",".scla_noTit")&&itms.addTitulos_bool)
+		if(bool&&!isJQ("."+this.scla+this.id+"",".scla_noTit")&&Titulos_bool)
 		{
 			if(tit.length===7)			
 			$("."+this.scla+this.id+"").prepend("<h2>"+$("#"+tit).text()+"</h2>");
@@ -152,7 +152,7 @@ function doc(id,clase)
 	{
 		for(var i=0;i < this.ele.length; i++)
 		{
-			this.ele[i].run();						
+			this.ele[i].run(this.addTitulos_bool);						
 		}
 	};
 	this.main=function()
