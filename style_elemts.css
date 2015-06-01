@@ -1,0 +1,31 @@
+/*Creado por Camilo Barbosa*/
+/*Elementos HTML5: */
+body
+{
+	text-align: center;				
+	background-color: black;
+	color: white;
+}
+
+header
+{
+	width:100%;
+	font-size: 7em;	
+}
+nav
+{
+	color: black;
+	
+}
+button{
+	border-radius: 5%;
+}
+
+article, .jumbotron
+{
+	background-color: white;
+	color: black;	
+	border-bottom-right-radius: 10%;
+	border-top-left-radius: 10%;
+	
+}
